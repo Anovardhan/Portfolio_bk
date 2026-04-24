@@ -5,7 +5,7 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY
-SECRET_KEY = os.environ.get('5636c01bc0899d82f08dfa748675a3b2', 'fallback-key')
+SECRET_KEY = os.environ.get('d59b95eb524970bf8a42024f0f0e5ca6', 'fallback-key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']  # change later to your domain
