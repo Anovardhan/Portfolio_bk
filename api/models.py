@@ -22,6 +22,8 @@ class MyInfo(models.Model):
 # 2. Technical Skills
 class Skill(models.Model):
     skill_name = models.CharField(max_length=100)
+    skill_image = models.ImageField(upload_to='skills/', null=True, blank=True)
+    skill_link = models.URLField(null=True, blank=True)
 
     def __str__(self):
         return self.skill_name
