@@ -17,4 +17,7 @@ urlpatterns = [
 
     path('certifications/', CertificationListCreate.as_view()),
     path('certifications/<int:pk>/', CertificationDetail.as_view()),
+    path('photos/', MyPhotoListCreate.as_view()),
+    path('photos/<int:pk>/', MyPhotoDetail.as_view()),
+    
 ]

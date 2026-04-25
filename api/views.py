@@ -51,3 +51,14 @@ class CertificationListCreate(generics.ListCreateAPIView):
 class CertificationDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Certification.objects.all()
     serializer_class = CertificationSerializer
+
+
+
+class MyPhotoListCreate(generics.ListCreateAPIView):
+    queryset = MyPhoto.objects.all()
+    serializer_class = MyPhotoSerializer
+
+
+class MyPhotoDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = MyPhoto.objects.all()
+    serializer_class = MyPhotoSerializer
